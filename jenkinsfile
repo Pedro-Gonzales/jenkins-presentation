@@ -24,7 +24,7 @@ pipeline{
 
         stage ('Construção da imagem docker') {
             steps{
-                scripts{
+                script{
                     dockerapp = docker.build("pedrogonzalescorrea/jenkins-example:${env.BUILD_ID}",
                                                 '-f .src/Dockerfile ./src')
                 }
