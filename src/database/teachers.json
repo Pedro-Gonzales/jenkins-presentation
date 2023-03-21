@@ -1,3 +1,34 @@
 {
-    "teachers" : []
+    "teachers" : [
+        {
+            "id" : 1,
+            "description" : "Daniel Faciolo Pires",
+            "isDepartamentChief" : true
+        },
+        {
+            "id" : 2,
+            "description" : "Leandro Borges",
+            "isDepartamentChief" : false
+        },
+        {
+            "id" : 3,
+            "description" : "Claudio Eduardo Paiva",
+            "isDepartamentChief" : false
+        },
+        {
+            "id" : 4,
+            "description" : "Jaqueline Brigladori Pugliesi",
+            "isDepartamentChief" : false
+        },
+        {
+            "id" : 5,
+            "description" : "Débora Pelicano Diniz",
+            "isDepartamentChief" : false
+        },
+        {
+            "id" : 6,
+            "description" : "Ely Fernando do Prado",
+            "isDepartamentChief" : false
+        }
+    ]
 }
