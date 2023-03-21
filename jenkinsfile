@@ -4,12 +4,6 @@ pipeline{
     tools {nodejs "node"}
 
     stages{
-        stage ("teste"){
-            steps{
-                 sh 'echo: "Foi automatico"'
-            }
-        }
-
         stage ("Checkout do código"){
             steps{
                 git url:  'https://github.com/Pedro-Gonzales/jenkins-presentation', branch: 'master'
@@ -25,6 +19,15 @@ pipeline{
         stage ('Rodagem dos testes') {
             steps{
                 sh 'npm test'
+            }
+        }
+
+        stage ('Construção da imagem docker') {
+            steps{
+                scripts{
+                    dockerapp = docker.build("pedrogonzalescorrea/jenkins-example:${env.BUILD_ID}",
+                                                '-f .src/Dockerfile ./src')
+                }
             }
         }
     }
