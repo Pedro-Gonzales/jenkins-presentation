@@ -5,11 +5,11 @@ import { GetOnlySubjectsUseCase } from "./GetOnlySubjectsUseCase";
 export class GetOnlySubjectsController{
     async handle(request: Request, response: Response){
 
-        const { id } = request.query
+        const { id } = request.params
 
         const getOnlySubjects = new GetOnlySubjectsUseCase
 
-        const result = await getOnlySubjects.execute(String(id))
+        const result = await getOnlySubjects.execute(Number(id))
 
         if(result.success){
             return response.json(result)

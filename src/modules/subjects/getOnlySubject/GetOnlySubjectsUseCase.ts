@@ -11,13 +11,13 @@ export interface IGetOnlySubjects{
 };
 
 export class GetOnlySubjectsUseCase {
-    async execute(subjectId: string) : Promise<IGetOnlySubjects>{
+    async execute(subjectId: number) : Promise<IGetOnlySubjects>{
       const { subjects } =  JSON.parse(fs.readFileSync('./src/database/subjects.json', 'utf-8'))
-       const subject =  subjects.find((subject : any) => subject.id === subjectId)
-       if(subject){
+       const index =  subjects.findIndex((subject : any) => subject.id === subjectId)
+       if(index !== -1){
         return {
             success: true,
-            subject
+            subject : subjects[index]
         }
        }else{
         return {
