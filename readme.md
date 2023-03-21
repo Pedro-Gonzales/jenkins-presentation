@@ -16,9 +16,14 @@ Docker
         npm run dev
 
 
-### 📖 Manual de usabilidade
+### 📖 Manual de usabilidade Jenkins
 
-
+ *Passo 1 - rodar docker-compose up
+ *Passo 2 - No navegador, abrir o jenkins
+ *Passo 3 - Para pegar a chave de acesso basta digitar os comandos: 
+    ** docker exec -it containerId bash
+    ** cat /var/jenkins_home/secrets/initialAdminPassword
+*Passo 4 - Após informar a secret, instalar plugins recomendados e criar login
 
 ## 🛠️ Construído com
 
