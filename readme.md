@@ -36,10 +36,3 @@ Docker
 * [Docker](https://www.docker.com) - Docker is a platform designed to help developers build, share, and run modern applications.
 * [Jenkins](https://www.jenkins.io) - Open source automation server
 
-
-## ✒️ Autores
-
-* **Pedro Gonzales**
-
-
----
