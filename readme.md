@@ -6,14 +6,17 @@ Projeto feito para apresentação do seminário sobre jenkins.
 
 ### 📋 Pré-requisitos
 
-Node
-Docker
+* Node
+* Docker
 
 ### 🔧 Instalação
 
-    Para baixar as dependências, no terminal do VsCode digitar o comando: npm install;
-    Para rodar o projeto em ambiente de desenvolvimento é necessário rodar os comandos:
+    * Para baixar as dependências, no terminal do VsCode digitar o comando: 
+        npm install
+    * Para rodar o projeto em ambiente de desenvolvimento é necessário rodar o comando:
         npm run dev
+    * Para rodar os testes é necessário rodar o comando:
+        npm run test
 
 
 ### 📖 Manual de usabilidade Jenkins
