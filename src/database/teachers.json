@@ -2,32 +2,32 @@
     "teachers" : [
         {
             "id" : 1,
-            "description" : "Daniel Faciolo Pires",
+            "description" : "John Doe",
             "isDepartamentChief" : true
         },
         {
             "id" : 2,
-            "description" : "Leandro Borges",
+            "description" : "Jane Doe",
             "isDepartamentChief" : false
         },
         {
             "id" : 3,
-            "description" : "Claudio Eduardo Paiva",
+            "description" : "Mark",
             "isDepartamentChief" : false
         },
         {
             "id" : 4,
-            "description" : "Jaqueline Brigladori Pugliesi",
+            "description" : "Jhoe",
             "isDepartamentChief" : false
         },
         {
             "id" : 5,
-            "description" : "Débora Pelicano Diniz",
+            "description" : "Mary",
             "isDepartamentChief" : false
         },
         {
             "id" : 6,
-            "description" : "Ely Fernando do Prado",
+            "description" : "Joane",
             "isDepartamentChief" : false
         }
     ]
