@@ -1,7 +1,7 @@
 pipeline{
     agent any
 
-    tools {nodejs "node", docker "docker"}
+    tools {nodejs "node"}
 
     stages{
         stage ("Checkout do código"){
@@ -22,13 +22,5 @@ pipeline{
             }
         }
 
-        stage ('Construção da imagem docker') {
-            steps{
-                script{
-                    dockerapp = docker.build("pedrogonzalescorrea/jenkins-example:${env.BUILD_ID}",
-                                                '-f .src/Dockerfile ./src')
-                }
-            }
-        }
     }
 }
