@@ -19,11 +19,8 @@ pipeline{
         stage ('Rodagem dos testes') {
             steps{
                 sh 'npm test'
+                discordSend description: ":tada: Ambiente atualizado: https://ihul.com.br", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1087895274699108433/lCYRmPYKx-ohDbmFvts4zGL8xGxefLsYnF7EB6s4IfihfsMKSiCObfK8Y5dwx8t4Cwz8"
             }
-        }
-
-        stage ('Exemplo notificação Jenkins'){
-            discordSend description: ":tada: Ambiente atualizado: https://ihul.com.br", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1087895274699108433/lCYRmPYKx-ohDbmFvts4zGL8xGxefLsYnF7EB6s4IfihfsMKSiCObfK8Y5dwx8t4Cwz8"
         }
 
     }
